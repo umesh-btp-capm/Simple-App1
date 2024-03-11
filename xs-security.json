@@ -4,7 +4,7 @@
   "description": "Security profile of called application",
   "scopes": [
     {
-      "name":"$xsappname.Display",
+      "name":"$XSAPPNAME.Display",
       "description":"Display the app to the user"
     }
   ],
@@ -13,13 +13,13 @@
       "name":"sampleapp1DisplayRoleTemp",
       "description":"Simple App1 Role Template",
       "scope-references":[
-        "$xsappname.Display"
+        "$XSAPPNAME.Display"
       ]
     }
   ],
   "role-collection":[
     {
-      "name":"$Sampleapp1DisplayRoleCollection",
+      "name":"Sampleapp1DisplayRoleCollection",
       "description":"Sample App1 Role Collection",
       "role-template-references":[
         "$xsappname.sampleapp1DisplayRoleTemp"
